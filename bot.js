@@ -62,7 +62,7 @@ client.on('message', message =>{
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
-    let prefix = "!"//البرفكس
+    let prefix = "#"//البرفكس
 
 if(cmd === `${prefix}sugg`) {
     var suggestMessage = message.content.substring(8)
@@ -152,25 +152,25 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)   
 .addField('     **─════════════ ⦁{✯الاوامر العامة✯}⦁ ════════════─** ' ,' **   ** ')
-.addField('     **→ معلومات حسابك ←** ' ,' **$id** ')
-.addField('     **→ سرعة استجابة البوت ←**  ' ,' **$ping** ')
-.addField('     **→ للحصول علي رابط البوت ←**  ' ,' **$invite** ')
-.addField('     **→ معلومات البوت ←** ' , '**$bot-info**') 
-.addField('     **→ لمعلومات الروم←** ' , '**$ch**') 
-.addField('     **→الافتار ←** ' ,' ** $avatar**')
-.addField('     **→ تاريخ اليوم←** ' , '**$date**')
-.addField('     **→ معلومات السيرفر ← ** ' ,' **  $server-info  ** ')
-.addField('     **→ لمعرفة حالة الاعضاء ← ** ' ,' **  $members  ** ')
-.addField('     **→ صأنع البوت ← ** ' ,' **  $bot-owner ** ')
+.addField('     **→ معلومات حسابك ←** ' ,' **#id** ')
+.addField('     **→ سرعة استجابة البوت ←**  ' ,' **#ping** ')
+.addField('     **→ للحصول علي رابط البوت ←**  ' ,' **#invite** ')
+.addField('     **→ معلومات البوت ←** ' , '**#bot-info**') 
+.addField('     **→ لمعلومات الروم←** ' , '**#ch**') 
+.addField('     **→الافتار ←** ' ,' ** #avatar**')
+.addField('     **→ تاريخ اليوم←** ' , '**#date**')
+.addField('     **→ معلومات السيرفر ← ** ' ,' **  #server-info  ** ')
+.addField('     **→ لمعرفة حالة الاعضاء ← ** ' ,' **  #members  ** ')
+.addField('     **→ صأنع البوت ← ** ' ,' **  #bot-owner ** ')
 .addField('     **─════════════ ⦁{✯الالعاب✯}⦁ ════════════─** ' ,' **   ** ')
-.addField('     **→ انجازات ماين كرافت ←  ** ' ,' **  $angaz ** ')
-.addField('     ** → كتابة كلام مثل كلايد بوت ←  ** ' ,' **  $s ** ')
-.addField('     ** → الزواج (مزحة) من الشخص ←  ** ' ,' **  $marry ** ')
-.addField('     ** → حجر ورق مقص ←  ** ' ,' **  $rps ** ')
+.addField('     **→ انجازات ماين كرافت ←  ** ' ,' **  #angaz ** ')
+.addField('     ** → كتابة كلام مثل كلايد بوت ←  ** ' ,' **  #s ** ')
+.addField('     ** → الزواج (مزحة) من الشخص ←  ** ' ,' **  #marry ** ')
+.addField('     ** → حجر ورق مقص ←  ** ' ,' **  #rps ** ')
 .addField('     **─════════════ ⦁{✯اوامر الادارة✯}⦁ ════════════─** ' ,' **   ** ')
-.addField('     ** → اععطاء العضو باند ←  ** ' ,' **  $ban ** ')
-.addField('     ** → طرد العضو من السيرفر ←  ** ' ,' **  $kick ** ')
-.addField('     ** → مسح الشات ←  ** ' ,' **  $clear ** ')
+.addField('     ** → اععطاء العضو باند ←  ** ' ,' **  #ban ** ')
+.addField('     ** → طرد العضو من السيرفر ←  ** ' ,' **  #kick ** ')
+.addField('     ** → مسح الشات ←  ** ' ,' **  #clear ** ')
 
 
 .setColor('RANDOM')
