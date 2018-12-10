@@ -85,15 +85,13 @@ msgS.react("❌")
 });
 
 
-code autorole
+
 
 client.on('guildMemberAdd', member=> {
     member.addRole(member.guild.roles.find("name","اسم الرتبة"));
     });
 	
 	
-	
-	code ينشر احد أي تلقائي ميوت
 	
 	client.on('message', function(message) {
     if (!message.member.hasPermissions(['ADMINISTRATOR'])){
@@ -118,10 +116,9 @@ client.on('guildMemberAdd', member=> {
 })
 
 
-code broadcast 
 
 client.on('message', message => {
-    var prefix = "$";
+    var prefix = "#";
     
         if (message.author.id === client.user.id) return;
         if (message.guild) {
@@ -151,7 +148,7 @@ client.on('message', message => {
 	code new help 
 	
 	client.on('message', message => {
-              var prefix = "$" ;
+              var prefix = "#" ;
             if (message.content.startsWith(prefix + "help")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)   
