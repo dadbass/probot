@@ -825,5 +825,20 @@ client.on('message', message => {
     return message.reply(`** :unamused: :rage:  تحسب أمها زريبة ولا وش ؟؟ **`)
     }
 });
+
+client.on('guildMemberRemove', member => {
+    var embed = new Discord.RichEmbed()
+.setAuthor(member.user.username, member.user.avatarURL)
+.setThumbnail(member.user.avatarURL)
+.setTitle('***خرج من السيرفر***')
+.addField('**الاسم**',`[ ${member} ]`)
+.addField('**عدد الاعضاء**',`[ ${member.guild.memberCount} ]`,true)
+.setColor('Random')
+   
+   var channel =member.guild.channels.find('name', 'welcome')
+   if (!channel) return;
+         channel.send({embed : embed});
+ 
+});
 				  			  
 client.login(process.env.BOT_TOKEN);
