@@ -145,7 +145,6 @@ client.on('message', message => {
         }
     });
 	
-	code new help 
 	
 	client.on('message', message => {
               var prefix = "#" ;
