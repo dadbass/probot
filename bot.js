@@ -812,7 +812,7 @@ client.on('message', message => {
     if(message.content.includes('discord.gg')){
         if(!message.channel.guild) return;
         message.delete()
-    return message.reply(`** Hahey Catch ya no invites links here 😠 ! **`)
+    return message.reply(`**:unamused: :rage:  تحسب أمها زريبة ولا وش ؟؟ **`)
     }
 });
  
@@ -822,7 +822,7 @@ client.on('message', message => {
     if(message.content.includes('youtube')){
         if(!message.channel.guild) return;
         message.delete()
-    return message.reply(`** Hahey Catch ya no invites links here 😠 ! **`)
+    return message.reply(`** :unamused: :rage:  تحسب أمها زريبة ولا وش ؟؟ **`)
     }
 });
 				  			  
